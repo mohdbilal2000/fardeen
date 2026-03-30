@@ -60,7 +60,7 @@ export default function Destinations() {
               key={d.name}
               href="#contact"
               className={`group relative overflow-hidden rounded-2xl ${
-                i === 0 ? "row-span-2 min-h-[300px] md:min-h-[500px]" : "min-h-[200px] md:min-h-[240px]"
+                i === 0 ? "col-span-2 md:col-span-1 md:row-span-2 min-h-[200px] md:min-h-[500px]" : "min-h-[180px] md:min-h-[240px]"
               }`}
             >
               <div

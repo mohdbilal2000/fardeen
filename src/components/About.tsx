@@ -11,7 +11,7 @@ export default function About() {
                   className="h-64 rounded-2xl bg-cover bg-center shadow-lg"
                   style={{
                     backgroundImage:
-                      "url('https://images.unsplash.com/photo-1585135497273-1a86d9d4e7a4?q=80&w=800')",
+                      "url('https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=800')",
                   }}
                 />
                 <div
@@ -27,7 +27,7 @@ export default function About() {
                   className="h-48 rounded-2xl bg-cover bg-center shadow-lg"
                   style={{
                     backgroundImage:
-                      "url('https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=800')",
+                      "url('https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=800')",
                   }}
                 />
                 <div

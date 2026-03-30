@@ -6,7 +6,7 @@ export default function CTA() {
     >
       {/* Background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center md:bg-fixed"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2071')",

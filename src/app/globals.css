@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F4C3A;
+  --color-primary-light: #1A6B50;
+  --color-primary-dark: #0A3528;
+  --color-accent: #C8956C;
+  --color-accent-light: #D4A882;
+  --color-accent-dark: #B07A52;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE3;
+  --color-dark: #1A1A2E;
+  --color-dark-light: #2D2D44;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: #333;
+    background: #fff;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-8 py-3 rounded-full font-medium tracking-wide
+           hover:bg-primary-light transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .btn-accent {
+    @apply bg-accent text-white px-8 py-3 rounded-full font-medium tracking-wide
+           hover:bg-accent-dark transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-3 rounded-full font-medium tracking-wide
+           hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dark;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-500 mt-4 max-w-2xl;
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(15, 76, 58, 0.85) 0%, rgba(26, 26, 46, 0.75) 100%);
+}
